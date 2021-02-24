@@ -1,0 +1,236 @@
+/* 
+### Primary
+
+- Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav-items > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: hsl(233, 8%, 62%);
+  margin-left: 10px;
+}
+.nav-bar > button {
+  padding: 12px 28px;
+  border: none;
+  outline-width: 0;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 400;
+  background-image: linear-gradient(
+    120deg,
+    hsl(192, 70%, 51%),
+    hsl(136, 65%, 51%)
+  );
+}
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+.hero-img-container {
+  background-image: url('./images/bg-intro-desktop.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+.hero-img-container > img {
+  width: 500px;
+}
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero-text-container > h1 {
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: hsl(233, 26%, 24%);
+  line-height: 1.1;
+}
+.hero-text-container > p {
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.hero-text-container > button {
+  padding: 12px 28px;
+  border: none;
+  outline-width: 0;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 400;
+  background-image: linear-gradient(
+    120deg,
+    hsl(192, 70%, 51%),
+    hsl(136, 65%, 51%)
+  );
+}
+.container {
+  background-color: hsl(220, 16%, 96%);
+}
+.why-us {
+  padding-top: 10vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10vh;
+}
+.why-us > h1 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: hsl(233, 26%, 24%);
+}
+.why-us > p {
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.features-section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 10vh;
+}
+.feature-item > img {
+  width: 65px;
+  margin-bottom: 5px;
+}
+.feature-item > h1 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: hsl(233, 26%, 24%);
+}
+.feature-item > p {
+  color: hsl(233, 8%, 62%);
+  font-weight: 700;
+}
+.blog-section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 10vh;
+}
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.blog-section > h1 {
+  font-size: 45px;
+  margin-left: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: hsl(233, 26%, 24%);
+}
+.article {
+  height: max-content;
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 15px;
+  background-color: #fff;
+}
+.article > img {
+  width: 250px;
+  height: 250px;
+}
+.content {
+  padding: 15px;
+}
+.content > p {
+  color: hsl(233, 8%, 62%);
+  font-weight: 400;
+  font-size: 14px;
+}
+.content > h4 {
+  color: hsl(233, 26%, 24%);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  height: 30vh;
+}
+.footer-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.menu > a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.social-container {
+  margin-top: 3rem;
+}
+.social-container > img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.footer-container > button {
+  margin-top: 3rem;
+  padding: 12px 28px;
+  border: none;
+  outline-width: 0;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 400;
+  background-image: linear-gradient(
+    120deg,
+    hsl(192, 70%, 51%),
+    hsl(136, 65%, 51%)
+  );
+}
